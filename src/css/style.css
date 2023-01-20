@@ -1,0 +1,41 @@
+.cabecalho {
+    background-color: rgb(240, 232, 232);
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.container{
+    background-color: rgb(24, 23, 23);
+    display: flex;
+}
+
+.cabecalho .logo {
+    width: 65px;
+    padding: 5px 5px;
+    
+}
+
+.cabecalho .menu {
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: crosshair;
+}
+
+.cabecalho nav li a {
+    font-weight:  bold;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.cabecalho nav li a:hover {
+    background-color: blue;
+}
