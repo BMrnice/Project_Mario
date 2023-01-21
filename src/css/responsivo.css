@@ -1,0 +1,66 @@
+@media (max-width: 1200px){ /*isso significa que aplica a selecao  ate tela de tamanho de  1200px */
+    body {
+        background-color: #fe0016;
+    }
+    .fundo-video {
+        display: none;
+    }
+    
+    .container {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+        /*essea declarao faz todos elementos que pulam pra fora da tela lateralmente os obriga ficarem um baixo um do outro */
+    }
+
+    .container .mario {
+        
+        max-width: 50%;
+        
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: white;
+        text-align: center;
+        font-size: 1.2em ;
+    }
+    .container .botao-trailer{
+        background-color: black;
+        
+    }
+    .container .botao-trailer:hover{
+        color: #ffff;
+    }
+}
+
+@media (max-width: 600px){
+    .cabecalho{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        
+        padding: 10PX;
+    }
+
+    .container .imagem-titulo {
+        max-width: 85%;
+        padding-top: 10px
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+}

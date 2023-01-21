@@ -1,18 +1,60 @@
 .cabecalho {
-    background-color: rgb(240, 232, 232);
+    
     display: flex;
     justify-content: space-between;
+    padding: 30PX;
    
 }
+
+/*
+max-width: 1440PX;
+    margin: auto;
+*/
 
 body {
     font-family: 'Poppins';
     font-weight: 600;
+    
 }
 
 .container{
-    background-color: rgb(24, 23, 23);
+    
     display: flex;
+    height: calc(100vh- 132px);
+    align-items: center;
+    padding: 0 30px 30px;
+}
+
+.container .imagem-titulo{
+    max-width: 500px;
+    padding-top: 100px;
+}
+
+.container .descricao {
+    color: #bdc1c9;
+    width: 85%;
+    font-size: 1em;
+    text-shadow: 2px 2px 1px rgb(19, 18, 18);
+    margin: 30px 0;
+}
+
+.container .botao-trailer {
+    background-color: #ff0021;
+    color: #ffff;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+    
+}
+.container .botao-trailer:hover {
+    transform:  scale(1.1) ;
+    background-color: #3488FE;
+    
+    
 }
 
 .cabecalho .logo {
@@ -22,11 +64,11 @@ body {
 }
 
 .cabecalho .menu {
-    background-color: coral;
+   
     display: flex;
     align-items: center;
     height: 100%;
-    cursor: crosshair;
+    
 }
 
 .cabecalho nav li a {
@@ -34,8 +76,90 @@ body {
     color: #ffff;
     padding: 10px 20px;
     border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.3em;
 }
 
 .cabecalho nav li a:hover {
-    background-color: blue;
+    background-color: #3488FE;
+    transition: 1.2s;
+}
+
+.fundo-video{
+    
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+.fundo-video .video{
+    height: 100vh;
+    width: 100vw;
+}
+
+.fundo-video::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    background-color: rgba(52, 52, 50, 0.527);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: #ffff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+.fechar-modal:hover{
+    background-color: black;
+    color: white;
+    transform:  scale(1.5) ;
+}
+
+.modal iframe {
+    border: none;
+    width: 840px;
+    height: 560px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+abbr {
+    text-decoration: none;
 }
