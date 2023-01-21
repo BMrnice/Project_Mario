@@ -5,6 +5,13 @@
     padding: 30PX;
    
 }
+.cabecalho.detalhes {
+    background-color: #f03a17;
+    display: flex;
+    justify-content: space-around;
+    padding: 10PX;
+   
+}
 
 /*
 max-width: 1440PX;
@@ -61,6 +68,9 @@ body {
     width: 65px;
     padding: 5px 5px;
     
+}
+.logo.nintendo {
+    width: 150px;
 }
 
 .cabecalho .menu {
