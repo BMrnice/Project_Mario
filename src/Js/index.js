@@ -1,23 +1,28 @@
-const button = document.getElementById('botao');
-const fecha = document.querySelector('.fechar-modal')
+const btnTrailer = document.getElementById('botao');
+const btnFecha = document.querySelector('.fechar-modal')
+const aberto = document.querySelector('.modal');
+const video = document.getElementById('video');
+const linkVideo = video.src
 
-button.addEventListener('click', function(e){
+btnTrailer.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('cliclou')
     setClassAberto();
-    //setClassFechaModal()
+    
 })
-fecha.addEventListener('click', function(){
-    console.log('clickoufecha')
+btnFecha.addEventListener('click', () => {
     setClassFechaModal()
 })
 
 function setClassAberto(){
-    const aberto = document.querySelector('.modal');
-    aberto.classList.add('aberto')
-}
+    alternaMOdal()
+    video.setAttribute('src', linkVideo);
+};
 
 function setClassFechaModal(){
-    const aberto = document.querySelector('.modal');
-    aberto.classList.remove('aberto')
-}
+    video.setAttribute('src', '');
+    alternaMOdal()
+};
+
+function alternaMOdal(){
+    aberto.classList.toggle('aberto')
+};

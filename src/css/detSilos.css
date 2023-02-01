@@ -1,0 +1,12 @@
+main {
+    width: 700px;
+    margin-left: 20%;
+    margin-right:auto;
+}
+
+.news__image{
+    
+    width: 800px;
+    height: 570px;
+    background-color: aqua;
+}
